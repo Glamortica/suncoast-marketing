@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suncoast Marketing | Creative + AI Systems</title>
+  <meta name="description" content="Original photography, drone aerials, digital art, web design, AI automation, and lead generation for small businesses in Sarasota, Bradenton, and Tampa Bay.">
+  <meta property="og:title" content="Suncoast Marketing | Creative + AI Systems">
+  <meta property="og:description" content="Photography, design, AI systems, and local business growth under one practical retainer.">
+  <meta property="og:image" content="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/4002a6ee-9f60-4762-9eca-fbf5d73f8e38.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+
+:root {
+  --navy: #0c2340;
+  --navy-2: #102641;
+  --red: #e93a4b;
+  --teal: #00859b;
+  --blue: #1eaedb;
+  --gold: #ffb200;
+  --paper: #f4f7fa;
+  --white: #ffffff;
+  --ink: #0c2340;
+  --line: rgba(12, 35, 64, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 94vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px clamp(18px, 4vw, 64px) 34px;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(12, 35, 64, 0.97) 0%, rgba(12, 35, 64, 0.72) 48%, rgba(12, 35, 64, 0.08) 100%),
+    url("https://suncoast-marketing-elevate.lovable.app/lovable-uploads/4002a6ee-9f60-4762-9eca-fbf5d73f8e38.png") center / cover;
+}
+
+.hero::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 7px;
+  background: linear-gradient(90deg, var(--red) 0 38%, var(--white) 38% 62%, #3c3b6e 62% 100%);
+  content: "";
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(12, 35, 64, 0.78) 0%, transparent 44%);
+  content: "";
+  pointer-events: none;
+}
+
+.nav,
+.hero-copy,
+.hero-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.brand,
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  gap: 11px;
+  font-weight: 900;
+}
+
+.brand-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 2px solid var(--red);
+  background: var(--navy);
+  box-shadow: 5px 5px 0 var(--gold);
+  font-size: 13px;
+}
+
+.nav-links {
+  gap: 2px;
+  background: rgba(12, 35, 64, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+.nav-links a {
+  padding: 11px 13px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.nav-links .nav-cta {
+  background: var(--red);
+  color: var(--white);
+}
+
+.hero-copy,
+.hero-grid,
+.section,
+.case-study,
+.media-section,
+.coverage,
+.intake,
+.proof-strip,
+.portfolio-heading,
+.portfolio-grid,
+.footer {
+  width: 100%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-copy {
+  padding: clamp(72px, 12vw, 160px) 0 54px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow,
+.case-study .eyebrow,
+.portfolio-section .eyebrow,
+.intake .eyebrow {
+  color: var(--gold);
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: 24px;
+  font-size: clamp(50px, 7.6vw, 104px);
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.12;
+}
+
+.hero-lede {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.55;
+}
+
+.hero-actions,
+.intake-card {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 19px;
+  border: 1px solid currentColor;
+  font-weight: 900;
+}
+
+.button.primary {
+  border-color: var(--red);
+  background: var(--red);
+  color: var(--white);
+}
+
+.button.secondary {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(12, 35, 64, 0.32);
+  color: var(--white);
+}
+
+.hero-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.proof-strip div {
+  min-height: 138px;
+  padding: 24px;
+  background: var(--white);
+}
+
+.proof-strip div:nth-child(1) {
+  border-top: 6px solid var(--red);
+}
+
+.proof-strip div:nth-child(2) {
+  border-top: 6px solid var(--teal);
+}
+
+.proof-strip div:nth-child(3) {
+  border-top: 6px solid var(--blue);
+}
+
+.proof-strip div:nth-child(4) {
+  border-top: 6px solid var(--gold);
+}
+
+.proof-strip strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--navy);
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1;
+}
+
+.proof-strip span {
+  font-weight: 800;
+}
+
+.section,
+.case-study,
+.media-section,
+.coverage,
+.intake {
+  padding: clamp(68px, 9vw, 112px) clamp(18px, 4vw, 34px);
+}
+
+.section-heading,
+.portfolio-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
+  gap: 34px;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.section-heading > p,
+.portfolio-heading > p {
+  color: rgba(12, 35, 64, 0.68);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.service-card {
+  min-height: 270px;
+  padding: 26px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+
+.service-card span {
+  display: block;
+  margin-bottom: 36px;
+  color: var(--red);
+  font-family: "Courier New", monospace;
+  font-weight: 900;
+}
+
+.service-card:nth-child(2n) span {
+  color: var(--teal);
+}
+
+.service-card:nth-child(3n) span {
+  color: var(--blue);
+}
+
+.service-card p,
+.case-study p,
+.media-section p,
+.intake p {
+  color: rgba(12, 35, 64, 0.68);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.portfolio-section {
+  padding: clamp(70px, 9vw, 116px) clamp(18px, 4vw, 64px);
+  background: var(--navy);
+  color: var(--white);
+}
+
+.portfolio-heading > p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-auto-rows: minmax(170px, 16vw);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.portfolio-item {
+  position: relative;
+  grid-column: span 4;
+  min-height: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background: var(--navy-2);
+}
+
+.portfolio-item.wide {
+  grid-column: span 8;
+}
+
+.portfolio-item.tall {
+  grid-row: span 2;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease, filter 420ms ease;
+}
+
+.portfolio-item::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(12, 35, 64, 0.88), transparent 54%);
+  content: "";
+  pointer-events: none;
+}
+
+.portfolio-item figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 15px;
+  left: 16px;
+  z-index: 1;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.portfolio-item:hover img {
+  filter: saturate(1.08);
+  transform: scale(1.025);
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(320px, 0.68fr);
+  gap: 48px;
+  background: var(--navy-2);
+  color: var(--white);
+}
+
+.case-study p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.case-steps {
+  display: grid;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.case-steps div {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 16px;
+  padding: 22px;
+  background: var(--navy);
+}
+
+.case-steps strong {
+  color: var(--gold);
+}
+
+.case-steps span {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.5;
+}
+
+.media-section {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.76fr) minmax(0, 0.84fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.media-frame {
+  padding: 10px;
+  background: var(--navy);
+  box-shadow: 16px 16px 0 var(--red), 28px 28px 0 var(--gold);
+}
+
+.media-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.check-list {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  padding: 14px 16px;
+  border-left: 5px solid var(--teal);
+  background: var(--white);
+  font-weight: 800;
+}
+
+.check-list li:nth-child(2) {
+  border-left-color: var(--red);
+}
+
+.check-list li:nth-child(3) {
+  border-left-color: var(--gold);
+}
+
+.coverage {
+  background: #e8f3f5;
+}
+
+.section-heading.compact {
+  display: block;
+  max-width: 780px;
+}
+
+.market-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.market-map span {
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  font-weight: 900;
+}
+
+.market-map span:nth-child(3n + 1) {
+  border-bottom: 4px solid var(--red);
+}
+
+.market-map span:nth-child(3n + 2) {
+  border-bottom: 4px solid var(--teal);
+}
+
+.market-map span:nth-child(3n) {
+  border-bottom: 4px solid var(--gold);
+}
+
+.intake {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.5fr);
+  gap: 40px;
+  color: var(--white);
+  background: var(--teal);
+}
+
+.intake p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.intake-card {
+  align-content: start;
+  padding: 26px;
+  background: rgba(12, 35, 64, 0.38);
+}
+
+.intake-card strong,
+.intake-card span {
+  display: block;
+  width: 100%;
+}
+
+.intake-card span {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.55;
+}
+
+.footer {
+  display: flex;
+  min-height: 110px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 34px;
+  border-top: 7px solid var(--red);
+  color: var(--white);
+  background: var(--navy);
+  font-weight: 900;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .section-heading,
+  .portfolio-heading,
+  .case-study,
+  .media-section,
+  .intake {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-strip,
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item,
+  .portfolio-item.wide {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: 820px;
+    background:
+      linear-gradient(0deg, rgba(12, 35, 64, 0.98) 0%, rgba(12, 35, 64, 0.72) 72%, rgba(12, 35, 64, 0.26) 100%),
+      url("https://suncoast-marketing-elevate.lovable.app/lovable-uploads/4002a6ee-9f60-4762-9eca-fbf5d73f8e38.png") 62% center / cover;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero-copy {
+    padding-top: 160px;
+  }
+
+  .hero-footer,
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .proof-strip,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-auto-rows: 250px;
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item,
+  .portfolio-item.wide,
+  .portfolio-item.tall {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .hero-actions .button,
+  .intake-card .button {
+    width: 100%;
+  }
+
+  .media-frame {
+    margin-right: 26px;
+  }
+}
+</style>
+</head>
+<body>
+<main><section class="hero" id="top"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="#top" aria-label="Suncoast Marketing home"><span class="brand-mark">SM</span><span>Suncoast Marketing</span></a><div class="nav-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#case-study">Results</a><a href="#coverage">Coverage</a><a class="nav-cta" href="#intake">Start</a></div></nav><div class="hero-copy"><p class="eyebrow">Sarasota / Bradenton / Greater Tampa Bay</p><h1>Creative firepower. AI systems. Local business growth.</h1><p class="hero-lede">Suncoast Marketing combines original photography, drone media, digital art, web design, AI automation, lead generation, and follow-up systems under one practical retainer.</p><div class="hero-actions"><a class="button primary" href="#work">View selected work</a><a class="button secondary" href="#intake">Book a consultation</a></div></div><div class="hero-footer"><span>Photograph by David Michaels</span><span>FAA Part 107 / SCAD B.F.A. / 25 years creating</span></div></section><section class="proof-strip" aria-label="Business proof points"><div><strong>10</strong><span>vacant units filled inside 90 days</span></div><div><strong>100-500</strong><span>qualified leads built into monthly systems</span></div><div><strong>25 yrs</strong><span>photography and design experience</span></div><div><strong>$100/hr</strong><span>retainer start with 5-hour monthly minimum</span></div></section><section class="section" id="services"><div class="section-heading"><div><p class="eyebrow">20 core services, one retainer</p><h2>The creative and technical work live together.</h2></div><p>Starts at $100/hr with a 5-hour monthly minimum. Creative production, setup, maintenance, marketing, and automation stay under one roof.</p></div><div class="service-grid"><article class="service-card"><span>01</span><h3>AI Automation &amp; Custom Agents</h3><p>Custom GPTs, internal agents, digital twins, prompt systems, and team training built around how your business actually works.</p></article><article class="service-card"><span>02</span><h3>Lead Generation</h3><p>100-500 qualified leads monthly with data management, visitor identification, landing pages, ads, and lead routing.</p></article><article class="service-card"><span>03</span><h3>Marketing &amp; Copywriting</h3><p>Facebook ads, local SEO, service pages, email sequences, blogs, captions, and campaign copy with AI speed and human editing.</p></article><article class="service-card"><span>04</span><h3>Photography &amp; Drone Aerials</h3><p>HDR interiors, exteriors, real estate media, rental property photos, brand shoots, events, and FAA Part 107 drone photo and video.</p></article><article class="service-card"><span>05</span><h3>Web &amp; App Development</h3><p>Fast AI-assisted websites, lead forms, booking flows, maps, calculators, agent websites, hosting, updates, and maintenance.</p></article><article class="service-card"><span>06</span><h3>AI Voice &amp; Phone Systems</h3><p>24/7 AI receptionists, branded phone greetings, scripted video tours, call routing, and real-time handoff to your team.</p></article></div></section><section class="portfolio-section" id="work"><div class="portfolio-heading"><div><p class="eyebrow">Selected work</p><h2>Photography, design, AI art, and visual identity.</h2></div><p>Real estate, aerials, interiors, portraits, digital experiments, logos, and service-business web concepts from the Suncoast archive.</p></div><div class="portfolio-grid"><figure class="portfolio-item tall"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/c61551fd-6821-42de-a3b6-959240d5f99f.png" alt="Aerial photograph of a waterfront home at sunset" loading="lazy"/><figcaption>Aerial / Waterfront</figcaption></figure><figure class="portfolio-item wide"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/2a239e21-af80-465c-92cb-7117263c0e34.png" alt="Bright modern kitchen interior photograph" loading="lazy"/><figcaption>Interiors / Real Estate</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/c284f15a-a30f-4bcc-9d27-0786a70b2119.png" alt="Editorial portrait with red glasses" loading="lazy"/><figcaption>Portrait / Editorial</figcaption></figure><figure class="portfolio-item tall"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/a84c593b-060b-4f40-b260-8105ef78fd07.png" alt="Colorful Bitcoin-inspired digital painting" loading="lazy"/><figcaption>Digital Art / Bitcoin</figcaption></figure><figure class="portfolio-item wide"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/6a8ccb71-758d-4ba5-8e2f-63cf71695606.png" alt="David Michaels name rendered across a sunset landscape" loading="lazy"/><figcaption>Identity / David Michaels</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/ff11a28e-27d2-46d1-a010-7d9e0e47378a.png" alt="Aerial sunset photograph over waterfront homes and boats" loading="lazy"/><figcaption>Drone / Suncoast</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/04dc1081-4ffd-4c08-b2c6-7237c3ce7f6c.png" alt="Open concept kitchen and living room interior photograph" loading="lazy"/><figcaption>Architecture / Interiors</figcaption></figure><figure class="portfolio-item tall"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/1a0f5c0c-e8f8-45c1-8d5d-0de4adfc898f.png" alt="Conceptual portrait with a city reflected in sunglasses" loading="lazy"/><figcaption>AI Art / Concept Portrait</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/fc1ea34b-ea17-4108-9118-a31c6fa69425.png" alt="Futuristic Bitcoin warrior artwork" loading="lazy"/><figcaption>Digital Art / Character</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/03fd1102-df43-41a5-ab5f-0c758f0beb47.png" alt="POW Photography drone logo presentation" loading="lazy"/><figcaption>Logo / POW Photography</figcaption></figure><figure class="portfolio-item wide"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/61816b35-4eb8-483a-86e5-b0c2c6e65e1c.png" alt="Outdoor living space with a fireplace and red accents" loading="lazy"/><figcaption>Lifestyle / Property</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/ee7c0bd8-16b7-4ecc-a2dd-870811809d08.png" alt="Swimming pool website design concept" loading="lazy"/><figcaption>Web Design / Home Services</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/76b71797-ceae-4b73-861c-7bbbebec07aa.png" alt="Professional portrait photographed at sunset" loading="lazy"/><figcaption>Portrait / Natural Light</figcaption></figure><figure class="portfolio-item standard"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/5dc19c7d-02b8-4226-8dff-9d3f0f1756dd.png" alt="Gold G Award logo design" loading="lazy"/><figcaption>Brand Design / Awards</figcaption></figure></div></section><section class="case-study" id="case-study"><div><p class="eyebrow">Rental marketing playbook</p><h2>From 10 vacant units to fully leased in 90 days.</h2><p>One rental owner had 10 unrented units. Suncoast Marketing treated the vacancies like a full campaign: professional photos, AI-optimized listings, platform distribution, targeted Facebook ads, single-inbox lead routing, and daily applicant flow.</p></div><div class="case-steps"><div><strong>01</strong><span>Photograph every unit with wide-angle, light-corrected, move-in-ready media.</span></div><div><strong>02</strong><span>Rewrite listings around renter intent: location, cost, nearby value, and fit.</span></div><div><strong>03</strong><span>Distribute to Zillow, Apartments.com, Facebook Marketplace, and targeted ads.</span></div><div><strong>04</strong><span>Route and pre-qualify inquiries before handoff to the owner or manager.</span></div></div></section><section class="media-section"><div class="media-frame"><img src="https://suncoast-marketing-elevate.lovable.app/lovable-uploads/c61551fd-6821-42de-a3b6-959240d5f99f.png" alt="Aerial waterfront property photograph by David Michaels" loading="lazy"/></div><div><p class="eyebrow">Photography-first marketing</p><h2>Built by David Michaels: photographer, technologist, and AI strategist.</h2><p>The work combines 25 years of photography and design experience, a B.F.A. in Photography &amp; Web Design from SCAD, real estate and rental media, local market knowledge, and AI-enhanced systems that keep output moving.</p><ul class="check-list"><li>Professional HDR interior and exterior photography</li><li>FAA Part 107 certified drone pilot</li><li>Real estate, rentals, events, portraits, motorsports, and brand imagery</li></ul></div></section><section class="coverage" id="coverage"><div class="section-heading compact"><p class="eyebrow">Service areas</p><h2>Local marketing tuned for the Suncoast map.</h2></div><div class="market-map"><span>Sarasota</span><span>Bradenton</span><span>Tampa Bay</span><span>Lakewood Ranch</span><span>St. Petersburg</span><span>Venice</span><span>Clearwater</span><span>Anna Maria</span></div></section><section class="intake" id="intake"><div><p class="eyebrow">Free 15-minute consultation</p><h2>Bring the business problem. Suncoast turns it into a system.</h2><p>Use it for rental vacancies, listing media, a new website, local SEO, social content, AI agents, phone automation, or a full retainer.</p></div><div class="intake-card"><strong>Start with:</strong><span>What you sell, where you serve, what is stuck, and what result you want first.</span><a class="button primary" href="mailto:david@suncoast-marketing.com?subject=Suncoast%20Marketing%20Consultation">Book a consultation</a></div></section><footer class="footer"><span>Suncoast Marketing</span><div><a href="https://youtube.com/@digital_photo_art">YouTube</a><a href="https://instagram.com/1digitalphotoart">Instagram</a><a href="https://tiktok.com/@dm_fl_foto">TikTok</a><a href="https://x.com/mdp_drone">X</a></div></footer></main>
+</body>
+</html>
